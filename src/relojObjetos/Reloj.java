@@ -145,7 +145,59 @@ public class Reloj {
 		
 		// lo devuelvo
 		return nuevoReloj;
+	}
+
+
+	
+	
+	public Reloj sumar(Reloj otro) {
+		
+		int segundos = this.segundos + otro.segundos;
+		int minutos = this.minutos + otro.minutos;
+		int horas = this.horas + otro.horas;
+		
+		if(segundos>59) {
+			
+			segundos-=60;
+			minutos++;
+		}
+		if(minutos>59) {
+			
+			minutos-=60;
+			horas++;
+		}
+		
+		
+		Reloj resultado = new Reloj();
+		resultado.segundos = segundos;
+		resultado.minutos = minutos;
+		resultado.horas = horas;
+		
+		return resultado;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	@Override
+	public String toString() {
+		return "Reloj [horas=" + horas + ", minutos=" + minutos + ", segundos=" + segundos + "]";
 	}	
+	
+	
+	
+	
+
+	
+	
 	
 	
 	

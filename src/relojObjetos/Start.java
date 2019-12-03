@@ -12,35 +12,23 @@ public class Start {
 		 * 
 		 * 
 		 */
-		
-		
-		
 		Reloj reloj1 = new Reloj();
-		reloj1.setHoraReal(1, 0, 23);
-		System.out.print("El reloj1 tiene las ");
-		System.out.println(	reloj1.getHoras()+":"
-							+reloj1.getMinutos()+":"
-							+reloj1.getSegundos());	
-		
+		reloj1.setHoraReal(21, 50, 23);
 		
 		Reloj reloj2 = new Reloj();
 		reloj2.setHoras(23);
 		reloj2.setMinutos(12);
-		reloj2.setSegundos(12);
+		reloj2.setSegundos(50);
+
 		Reloj unSegundoDespues = reloj2.addSegundo2Reloj();
-		reloj2.addSegundo();
+		
+		// pruebo la suma
+		Reloj suma = reloj1.sumar(reloj2);
 		
 		
-		System.out.print("El reloj2 tiene las ");
-		System.out.println(	reloj2.getHoras()+":"
-							+reloj2.getMinutos()+":"
-							+reloj2.getSegundos());	
-		
-		System.out.print("El unSegundoDespues tiene las ");
-		System.out.println(	unSegundoDespues.getHoras()+":"
-							+unSegundoDespues.getMinutos()+":"
-							+unSegundoDespues.getSegundos());	
-		
+		System.out.println(reloj1);
+		System.out.println(reloj2);
+		System.out.println(suma);
 		
 	}
 }
