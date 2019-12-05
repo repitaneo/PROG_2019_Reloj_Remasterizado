@@ -15,11 +15,16 @@ public class Start {
 		Reloj reloj1 = new Reloj();
 		reloj1.setHoraReal(21, 50, 23);
 		
-		Reloj reloj2 = new Reloj();
+		Reloj reloj2 = new Reloj(23,12,50);
+		/*
 		reloj2.setHoras(23);
 		reloj2.setMinutos(12);
 		reloj2.setSegundos(50);
-
+		 */
+		
+		Reloj relojCopiado = new Reloj(reloj1);
+		
+		
 		Reloj unSegundoDespues = reloj2.addSegundo2Reloj();
 		
 		// pruebo la suma

@@ -13,6 +13,33 @@ public class Reloj {
 	
 	
 
+	public Reloj() {
+		
+		horas = 12;
+		minutos = 0;
+		segundos = 0;
+	}
+	
+	
+	
+	public Reloj(int horas,int minutos,int segundos) {
+		
+		this.horas = horas;
+		this.minutos = minutos;
+		this.segundos = segundos;
+	}
+	
+	
+	public Reloj(Reloj copia) {
+		
+		this.horas = copia.horas;
+		this.minutos = copia.minutos;
+		this.segundos = copia.segundos;
+	}
+	
+	
+	
+	
 	
 	
 	/**
